@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craxshed Shoes</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- swiper js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shoe-prints"></i> Craxshed shoes</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#products">products</a>
+            <a href="#featured">featured</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-shopping-cart" id="cart-btn">
+                <span id="cart-count" class="cart-counter">0</span>
+            </a>
+            
+            
+            <!-- Cart Dropdown (Initially Hidden) -->
+            <div id="cart-dropdown" class="cart-container">
+                <h3>Shopping Cart</h3>
+                <ul id="cart-items"></ul>
+                <button id="clear-cart" class="btn">Clear Cart</button>
+            </div>
+            
+            <a href="#" class="wishlist-btn"><i class="far fa-heart"></i></a>
+
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="" id="search-box" placeholder="search here...">
+            <label class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="slides-container">
+            
+            <div class="slide active">
+                <div class="content">
+                    <span>New Winter Sports Shoes Collection! ❄️</span>
+                    <h3>shoes collection</h3>
+                    <p>Welcome to  Craxshed shoes The Ultimate Nike Shoe Collection!
+
+                        Step into the world of premium footwear with our exclusive collection of Nike shoes. Whether you're a sneakerhead, an athlete, or just love stylish and comfortable shoes, we have something for everyone. Explore the latest designs, cutting-edge technology, and timeless classics, all crafted for performance and style.
+                        
+                        Find your perfect pair today and take your footwear game to the next level! 🚀👟</p>
+                    <button class="btn shop-now">
+                        <span>shop now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    
+                </div>
+                <div class="image">
+                    <img src="header-1.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>New Winter Sports Shoes Collection! ❄️</span>
+                    <h3>shoes collection</h3>
+                    <p>Welcome to  Craxshed shoes The Ultimate Nike Shoe Collection!
+
+                        Step into the world of premium footwear with our exclusive collection of Nike shoes. Whether you're a sneakerhead, an athlete, or just love stylish and comfortable shoes, we have something for everyone. Explore the latest designs, cutting-edge technology, and timeless classics, all crafted for performance and style.
+                        
+                        Find your perfect pair today and take your footwear game to the next level! 🚀👟</p>
+                    <button class="btn">
+                        <span>shop now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="image">
+                    <img src="header-2.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="slide-next" onclick="next()" class="fas fa-angle-right"></div>
+        <div id="slide-prev" onclick="prev()" class="fas fa-angle-left"></div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- latest product section starts -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading"><span>latest</span> products</h1>
+
+        <div class="box-container">
+
+            <div class="box" data-name="nike air force">
+                <div class="image">
+                    <img src="product-1.png" alt=" ">                                     
+                </div>
+                <div class="content">
+                    <h3>Nike Air Force</h3>
+                    <div class="price">₹2999.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(1134+)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div class="box" data-name="Nike Air Max">
+                <div class="image">
+                    <img src="product-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Nike Air Max</h3>
+                    <div class="price">₹1999.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(2666+)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div class="box" data-name="Nike Air Ship">
+                <div class="image">
+                    <img src="product-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Nike Air Ship</h3>
+                    <div class="price">₹2599.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(2200+)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div class="box" data-name="Nike Air Tailwind">
+                <div class="image">
+                    <img src="product-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Nike Air Tailwind</h3>
+                    <div class="price">₹3999.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(1857+)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div class="box" data-name="Nike Blazer">
+                <div class="image">
+                    <img src="product-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Nike Blazer</h3>
+                    <div class="price">₹1599.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(2896+)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div class="box" data-name="nike Dunk">
+                <div class="image">
+                    <img src="product-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Nike Dunk</h3>
+                    <div class="price">₹2299.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(1481+)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- latest product section ends -->
+
+    <!-- banner section starts -->
+
+    <section class="banner-container">
+
+        <div class="banner">
+            <img src="banner1.jpg" alt="">
+            <div class="content">
+                <span>limited offer</span>
+                <h3>upto 55% off</h3>
+                <button class="btn">
+                    <span>shop now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="banner2.jpg" alt="">
+            <div class="content">
+                <span>limited offer</span>
+                <h3>upto 40% off</h3>
+                <button class="btn">
+                    <span>shop now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- banner section ends -->
+
+    <!-- featured product section starts -->
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>featured</span> products</h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-35%</span>
+                    <div class="image">
+                        <img src="product-1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nike Air Force</h3>
+                        <div class="price">₹2999.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn add-to-cart">add to cart</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-54%</span>
+                    <div class="image">
+                        <img src="product-2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nike Air Max</h3>
+                        <div class="price">₹1999.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn add-to-cart">add to cart</a>
+
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-42%</span>
+                    <div class="image">
+                        <img src="product-3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nike Air Ship</h3>
+                        <div class="price">₹2599.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn add-to-cart">add to cart</a>
+
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-25%</span>
+                    <div class="image">
+                        <img src="product-4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nike Air Tailwind</h3>
+                        <div class="price">₹3999.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn add-to-cart">add to cart</a>
+
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-67%</span>
+                    <div class="image">
+                        <img src="product-5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nike Blazer</h3>
+                        <div class="price">₹1599.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn add-to-cart">add to cart</a>
+
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-25%</span>
+                    <div class="image">
+                        <img src="product-6.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nike Dunk</h3>
+                        <div class="price">₹2299.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn add-to-cart">add to cart</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </section>
+
+    <!-- featured product section ends -->
+
+    <!-- review section starts -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"><span>client's</span> review</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="pic-1.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Aarohi</h3>
+                    <p>Shopping at Craxshed Show was a breeze! 😎 The Nike shoes I ordered were authentic and looked even better in person. The delivery was super fast 🚚, and the site was super easy to navigate. Definitely going to be my go-to for Nike kicks from now on! 👟🔥</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="pic-2.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Abhay Singh</h3>
+                    <p>Had a solid experience with Craxshed Show! 💥 They’ve got a great selection of Nike shoes, and the quality is top-notch. My order arrived on time ⏰, and the shoes fit perfectly! Only thing I’d suggest is improving the filter options 🛒, but overall a great site! 💯</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="pic-3.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Advika</h3>
+                    <p>I’m impressed with Craxshed Show! 👏 The Nike shoes I bought were exactly what I was looking for, and the price was great too 💸. The shipping was quick, and they kept me updated on my order. Will definitely be back for more! 🙌👟✨</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- send gift section starts -->
+
+    <section class="send">
+
+        <div class="container">
+
+            <div class="content">
+                <h2 class="title">send gift now</h2>
+                <p>🎁 Looking for the perfect surprise? Sending a gift has never been easier! 🎉 Choose from our amazing collection, add a personal touch with a heartfelt message 💌, and we'll take care of the rest. Whether it's for a birthday 🎂, anniversary 💍, or just to show someone you care ❤️, we've got you covered! 🛍️✨</p>
+                <form action="">
+                    <input type="text" class="input" placeholder="product & address">
+                    <a href="#" class="btn">send</a>
+                </form>
+            </div>
+            <div class="image">
+                <img src="Send gift.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- send gift section ends -->
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="contact.png" alt="">
+            </div>
+
+            <form id="contact-form">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="inputBox">
+                    <input type="number" id="phone" placeholder="Your Number">
+                    <input type="text" id="subject" placeholder="Your Subject" required>
+                </div>
+                <textarea id="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            
+            <!-- Success Message -->
+            <p id="success-msg" style="display: none; color: green; font-size: 1.5rem;">Message sent successfully!</p>
+            
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>At Craxshed Show, we bring you the latest authentic Nike footwear 👟 with fast shipping 🚚 and excellent customer service. Whether you're training hard or chilling out, we’ve got the perfect pair for you. Explore our collection today! ✨</p>
+            </div>
+
+            <div class="box">
+                <h3>our services</h3>
+                <a href="#">pricing</a>
+                <a href="#">discount</a>
+                <a href="#">refund policy</a>
+                <a href="#">shipping mode</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home" class="quick-link">Home</a>
+                <a href="#products" class="quick-link">Products</a>
+                <a href="#featured" class="quick-link">Featured</a>
+                <a href="#review" class="quick-link">Review</a>
+            </div>
+            
+
+            <div class="box">
+                <h3>social links</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="credit">
+        &copy; Copyright @ 20K5 By Nikhil Ranjan 
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+</body>
+</html>
